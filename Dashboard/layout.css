@@ -1,0 +1,148 @@
+*{
+  margin: 0px;
+  padding: 0px;
+
+}
+.container{
+  width: 1500px;
+  margin: 0 auto;
+  overflow: auto;
+  
+}
+.container::-webkit-scrollbar {
+  width: 10px;
+}
+.container div{
+  text-align: center;
+  display: table;
+  
+}
+.container div span{
+  display: table-cell;
+  vertical-align: middle;
+  
+}
+
+.top{
+    margin-top: 20px;
+    width: 1500px;
+    height: 80px;
+    position: relative;
+    
+    
+}
+.top-left{
+  top: 20px;
+  position: absolute;
+  width: max-content;
+  height:max-content;
+  font-size: 20px;
+  display: table;
+  border-radius: 4px;
+  left: 20px;
+  font-style: italic;
+  text-align: initial;
+
+}
+.top-right{
+    top: 20px;
+    position: absolute;
+    right: 20px;
+    width: 670px;
+    height: 80px;
+    text-align: center;
+    font-size: 30px;
+    font-style: oblique;
+    display: table;
+    vertical-align: middle;
+    line-height: 80px;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 7px cornflowerblue;
+    
+    border-radius: 10px;
+
+}
+.middle{
+  
+  margin-top: 30px;
+  width: 1500px;
+  height: 500px;
+  position: relative;
+  
+}
+.middle-left{
+  position: absolute;
+  top: 0px;
+  width: 900px;
+  height: 510px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  left: 10px;
+  box-shadow: 0px 0px 7px cornflowerblue;
+}
+.tempH{
+  position:absolute;
+  left: 180px;    
+  border-color: black;
+  background-color: white;
+  outline-style: auto;
+  top: 25px;
+  font-size: 30px;
+  
+  font-style: unset;
+  font-feature-settings: "aalt";
+  ;
+  }
+.middle-right{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 570px;
+  height: 510px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0px 0px 7px cornflowerblue;
+  
+}
+.bottom{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: 1500px;
+  height: 400px;
+  position: relative;
+  border-radius: 10px;
+}
+.bottom-left{
+  position: absolute;
+  top: 0px;
+  width: 770px;
+  height: 400px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  left: 10px;
+  text-align: center;
+  line-height: 740px;
+  vertical-align: middle;
+  box-shadow: 0px 0px 7px cornflowerblue;
+} 
+.bottom-right{
+  position: absolute;
+  top: 0px;
+  width: 700px;
+  height: 400px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  right: 0px;
+  text-align: center;
+  line-height: 740px;
+  vertical-align: middle;
+  box-shadow: 0px 0px 7px cornflowerblue;
+}
+.tsa{
+  position: absolute;
+  font-size: 18px;
+ 
+  left: 1100px;
+}
+
+html { overflow-y:scroll; }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Dashboard
+    </title>
+    <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="layout.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="RadarChart.js"></script>
+	<style>
+		body {
+		  overflow: hidden;
+		  margin: 0;
+		  font-size: 20px;
+		  font-family: "Helvetica Neue", Helvetica;
+		}
+
+		#chart {
+		  position: absolute;
+		  top:50px;
+		  left: 10px;
+		}	
+	</style>
+
+
+  <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <!-- TOP -->
+  <div class="top">
+      <div id="root"></div>
+      <script src="bundle.js"></script>
+    </div></span></div>
+      
+    <div class="top-left"><span>Dashboard</span>    <img src='./logo.png' alt="LoGo" style= "float: center; width:300px; height:100px; margin-left:4px;"/></div></span></div>
+
+      <div class="top-right">
+		<div id="menus">
+      <span>Prediction & Analysis</span>
+			<span id="year"></span>
+			<span id="half"></span>
+		  </div>
+	  </div>
+    <br>
+    <hr width="1500px" size="3px" color="darkblue">
+
+
+  <!-- MIDDLE -->
+  <div class="middle">
+
+    <div class="middle-left"> <br/>
+      <div class="tempH"><span>tempHigh</span></div>
+    <div id="menus">
+      <span id="y-menu"></span>
+       vs
+          <span id="x-menu"></span>
+
+    </div>
+    <svg width="960" height="450"></svg>
+    <script src="bundle.js"></script>
+
+  </div>
+
+    <div class="middle-right"><span></span>
+      <div id="body">
+        <div id="chart"></div>
+        </div>
+      
+        <script type="text/javascript" src="script.js"></script>
+    
+
+      
+    </div>
+    
+
+  </div>
+  <br>
+  <br>
+  <hr width="1500px" size="3px" color="darkblue">
+    <div class="bottom">
+      <div class="bottom-left"> <span><iframe src="https://localhost:8080/firstHalf_2017.html" width="720px" height="350"></iframe><br/></span></div>
+      <div class="bottom-right"> <span><iframe src="https://localhost:8080/time_series.html" width="650px" height="350px"></iframe></span></div>
+    <div class="tsa"> <span>시계열 분석</span></div>
+   
+    </div>
+    <br>
+    <hr width="1500px" size="3px" color="darkblue">
+    <br><br>
+ </body>
+ 
+</html>
+
