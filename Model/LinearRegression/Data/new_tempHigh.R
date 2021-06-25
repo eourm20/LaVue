@@ -1,21 +1,21 @@
-# µ•¿Ã≈Õ ∫“∑Øø¿±‚
-data_mice <- read.csv("C:/Users/eourm/Desktop/¿∂«’∆¿«√/LaVue-main/LaVue-main/dat_mice.csv")
+# Îç∞Ïù¥ÌÑ∞ Î∂àÎü¨Ïò§Í∏∞
+data_mice <- read.csv("C:/Users/eourm/Desktop/ÏúµÌï©ÌåÄÌîå/LaVue-main/LaVue-main/dat_mice.csv")
 str(data_mice)
 dat_mice<- data_mice[,-c(1)] 
 dat_mice$date <- as.Date(dat_mice$date)
 
-setwd('C:/Users/eourm/Desktop/¿∂«’∆¿«√/º±«¸»∏±Õ')
+setwd('C:/Users/eourm/Desktop/ÏúµÌï©ÌåÄÌîå/ÏÑ†ÌòïÌöåÍ∑Ä')
 
-#n+1≥Ø √÷∞Ì±‚ø¬ªÃ¥¬∞˙¡§
+#n+1ÎÇ† ÏµúÍ≥†Í∏∞Ïò®ÎΩëÎäîÍ≥ºÏ†ï
 to_tempHigh <- dat_mice$tempHigh
 str(to_tempHigh)
 to_tempHigh <- to_tempHigh[-1]
 to_tempHigh[43414]<-0
 mice_df <- data.frame(dat_mice, to_tempHigh)
 str(mice_df)
-write.csv(mice_df, file="n+1¿œ_data.csv", row.names = FALSE)
+write.csv(mice_df, file="n+1Ïùº_data.csv", row.names = FALSE)
 
-#n+2≥Ø √÷∞Ì±‚ø¬ªÃ¥¬∞˙¡§
+#n+2ÎÇ† ÏµúÍ≥†Í∏∞Ïò®ÎΩëÎäîÍ≥ºÏ†ï
 to_tempHigh2 <- mice_df$to_tempHigh
 str(to_tempHigh2)
 to_tempHigh2 <- to_tempHigh2[-1]
@@ -23,52 +23,52 @@ to_tempHigh2[43414]<-0
 str(to_tempHigh2[43381:43383])
 mice_df2 <- data.frame(mice_df[,-27], to_tempHigh2)
 str(mice_df2)
-write.csv(mice_df2, file="n+2¿œ_data.csv", row.names = FALSE)
+write.csv(mice_df2, file="n+2Ïùº_data.csv", row.names = FALSE)
 
-#n+3≥Ø √÷∞Ì±‚ø¬ªÃ¥¬∞˙¡§
+#n+3ÎÇ† ÏµúÍ≥†Í∏∞Ïò®ÎΩëÎäîÍ≥ºÏ†ï
 to_tempHigh3 <- mice_df2$to_tempHigh2
 str(to_tempHigh3)
 to_tempHigh3 <- to_tempHigh3[-1]
 to_tempHigh3[43414]<-0
 mice_df3 <- data.frame(mice_df2[,-27], to_tempHigh3)
 str(mice_df3)
-write.csv(mice_df3, file="n+3¿œ_data.csv", row.names = FALSE)
+write.csv(mice_df3, file="n+3Ïùº_data.csv", row.names = FALSE)
 
 
-#n+4≥Ø √÷∞Ì±‚ø¬ªÃ¥¬∞˙¡§
+#n+4ÎÇ† ÏµúÍ≥†Í∏∞Ïò®ÎΩëÎäîÍ≥ºÏ†ï
 to_tempHigh4 <- mice_df3$to_tempHigh3
 str(to_tempHigh4)
 to_tempHigh4 <- to_tempHigh4[-1]
 to_tempHigh4[43414]<-0
 mice_df4 <- data.frame(mice_df3[,-27], to_tempHigh4)
 str(mice_df4)
-write.csv(mice_df4, file="n+4¿œ_data.csv", row.names = FALSE)
+write.csv(mice_df4, file="n+4Ïùº_data.csv", row.names = FALSE)
 
-#n+5≥Ø √÷∞Ì±‚ø¬ªÃ¥¬∞˙¡§
+#n+5ÎÇ† ÏµúÍ≥†Í∏∞Ïò®ÎΩëÎäîÍ≥ºÏ†ï
 to_tempHigh5 <- mice_df4$to_tempHigh4
 str(to_tempHigh5)
 to_tempHigh5 <- to_tempHigh5[-1]
 to_tempHigh5[43414]<-0
 mice_df5 <- data.frame(mice_df4[,-27], to_tempHigh5)
 str(mice_df5)
-write.csv(mice_df5, file="n+5¿œ_data.csv", row.names = FALSE)
+write.csv(mice_df5, file="n+5Ïùº_data.csv", row.names = FALSE)
 
 
-#n+6≥Ø √÷∞Ì±‚ø¬ªÃ¥¬∞˙¡§
+#n+6ÎÇ† ÏµúÍ≥†Í∏∞Ïò®ÎΩëÎäîÍ≥ºÏ†ï
 to_tempHigh6 <- mice_df5$to_tempHigh5
 str(to_tempHigh6)
 to_tempHigh6 <- to_tempHigh6[-1]
 to_tempHigh6[43414]<-0
 mice_df6 <- data.frame(mice_df5[,-27], to_tempHigh6)
 str(mice_df6)
-write.csv(mice_df6, file="n+6¿œ_data.csv", row.names = FALSE)
+write.csv(mice_df6, file="n+6Ïùº_data.csv", row.names = FALSE)
 
-#n+7≥Ø √÷∞Ì±‚ø¬ªÃ¥¬∞˙¡§
+#n+7ÎÇ† ÏµúÍ≥†Í∏∞Ïò®ÎΩëÎäîÍ≥ºÏ†ï
 to_tempHigh7 <- mice_df6$to_tempHigh6
 str(to_tempHigh7)
 to_tempHigh7 <- to_tempHigh7[-1]
 to_tempHigh7[43414]<-0
 mice_df7 <- data.frame(mice_df6[,-27], to_tempHigh7)
 str(mice_df7)
-write.csv(mice_df7, file="n+7¿œ_data.csv", row.names = FALSE)
+write.csv(mice_df7, file="n+7Ïùº_data.csv", row.names = FALSE)
 
